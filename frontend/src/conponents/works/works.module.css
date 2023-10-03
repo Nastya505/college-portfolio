@@ -5,3 +5,16 @@
     justify-content: center;
     gap: 20px;
 }
+
+@media  screen and (max-width: 828px){
+   .grid{
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: auto;
+   }
+}
+@media  screen and (max-width: 617px){
+   .grid{
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: auto;
+   }
+}

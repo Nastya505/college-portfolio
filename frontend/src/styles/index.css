@@ -1,8 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url("typography.css");
+
+:root{
+  --fz-small: 14px;
+  --fz-big: 80px;
+
+  --fw-bold: 700;
+  --fw-regular: 400;
+
+  --ff: 'Inter', sans-serif;
+
+  --text-color: #000;
+  --details-color: #bbb;
+}
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--ff);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }

@@ -3,7 +3,7 @@ import styles from "./button.module.css"
 function Button(props){
     return(
         <>
-            <button className={styles.button}>{props.children}</button>  
+            <a href="#" className={styles.button}>{props.children}</a>  
         </>
     )
 }

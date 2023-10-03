@@ -1,25 +1,51 @@
 .button{
-    color: #000;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    color: var(--text-color);
+    font-family: var(--ff);
+    font-size: var(--fz-small);
+    font-weight: var(--fw-regular);
     line-height: 14px; 
     text-transform: uppercase;
     border-radius: 30px;
-    border: 1px solid #BBB;
+    border: 1px solid var(--details-color);
     background: #fff;
-    text-decoration: none;
     padding: 8px 16px;
     transition: all .2s;
     align-items: center;
     display: flex;
     justify-content: center;
+    text-decoration: none;
     
 }
 .button:hover{
     color: #FFF;
-    font-weight: 700;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color);
 
+}
+
+@media  screen and (max-width: 1062px){
+    .button{
+        font-size: calc(var(--fz-small) / 1.2 );
+    }
+}
+
+@media  screen and (max-width: 900px){
+    .button{
+        font-size: var(--fz-small);
+    }
+}
+@media  screen and (max-width: 540px){
+    .button{
+        font-size: calc(var(--fz-small) / 1.4 );
+    }
+}
+@media  screen and (max-width: 460px){
+    .button{
+      font-size: calc(var(--fz-small) / 1.5);
+    }
+}
+@media  screen and (max-width: 415px){
+    .button{
+      font-size: calc(var(--fz-small) / 1.9);
+    }
 }
