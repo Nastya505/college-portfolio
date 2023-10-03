@@ -12,3 +12,11 @@ services:
       - ./docker/pg-data:/var/lib/postgresql/data/
     env_file:
       - .env
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      -8080:8080
+    depends_on:
+      - postgres_db
