@@ -1,0 +1,11 @@
+.footer{
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+.footerText{
+    border-bottom: 1px solid #BBB;
+    padding-bottom: -1px;
+}
