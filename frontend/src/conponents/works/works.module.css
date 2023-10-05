@@ -1,20 +1,12 @@
-.grid{
-    display: grid;
-    grid-template-columns: repeat(2, 400px);
-    grid-template-rows: 300px;
-    justify-content: center;
+.container{
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+.works{
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 2;
+    grid-column-end: 4;
     gap: 20px;
-}
-
-@media  screen and (max-width: 828px){
-   .grid{
-        grid-template-columns: repeat(2, 300px);
-        grid-template-rows: auto;
-   }
-}
-@media  screen and (max-width: 617px){
-   .grid{
-        grid-template-columns: repeat(1, 300px);
-        grid-template-rows: auto;
-   }
 }
