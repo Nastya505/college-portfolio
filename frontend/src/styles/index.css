@@ -23,9 +23,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
-
-.active{
-  color: #FFF;
-  background-color: var(--text-color);
-  border: 1px solid var(--text-color);
-}
