@@ -4,7 +4,7 @@
     font-size: var(--fz-small);
     font-weight: var(--fw-regular);
     line-height: 14px; 
-    text-transform: uppercase;
+    text-transform: lowercase;
     border-radius: 30px;
     border: 1px solid var(--details-color);
     background: #fff;
@@ -14,9 +14,10 @@
     display: flex;
     justify-content: center;
     text-decoration: none;
+    cursor: pointer;
     
 }
-.active{
+.button:hover{
     color: #FFF;
     background-color: var(--text-color);
     border: 1px solid var(--text-color);

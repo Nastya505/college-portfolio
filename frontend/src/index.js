@@ -4,10 +4,18 @@ import './styles/index.css';
 import App from './components/app/app';
 import reportWebVitals from './reportWebVitals';
 
+import { MantineProvider, createTheme } from '@mantine/core';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const theme = createTheme({
+  fontFamily: 'Open Sans, sans-serif',
+  primaryColor: 'cyan',
+});
 root.render(
   <React.StrictMode>
-    <App />
+    <MantineProvider theme={theme}>
+      <App />
+    </MantineProvider>
   </React.StrictMode>
 );
 

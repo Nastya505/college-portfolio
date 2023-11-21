@@ -20,3 +20,6 @@
 .pr-5{
     padding-right:calc(var(--offset-base-size) * 5);
 }
+.m-5{
+    margin: calc(var(--offset-base-size) * 5);
+}

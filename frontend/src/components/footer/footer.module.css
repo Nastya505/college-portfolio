@@ -3,11 +3,10 @@
     margin: 0 20px;
     padding: 20px 10px;
     align-items: center;
-    gap: 10px;
+    gap: calc(var(--offset-base-size) * 1);
+    box-sizing: border-box;
     align-self: stretch;
 }
 .footerText{
-    border-bottom: 1px solid var(--details-color);
-    padding-bottom: -1px;
     font-size: var(--fz-small);
 }

@@ -14,12 +14,6 @@ function Filter ({types, works, setFilteredWorks}) {
 
     return(
         <div className={styles.filter}>
-            <Button
-            isActive={typeId === null}
-            onClick={() => setTypeId(null)}
-            >
-            Все 
-            </Button>
             {
                 types.map((type) => 
                     <Button 
