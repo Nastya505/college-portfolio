@@ -3,4 +3,29 @@
     display: block;
     aspect-ratio: 3 / 2;
     object-fit: cover;
+    z-index: -1;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.categoryIcon {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    margin-bottom: -40px;
+}
+
+.categoryIcon img {
+    width: 26px;
+    height: 26px;
+}
+
+@media (max-width: 650px) {
+   .img {
+       aspect-ratio: 1 / 1;
+   }
 }

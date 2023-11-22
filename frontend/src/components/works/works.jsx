@@ -7,7 +7,7 @@ function Works({works}){
             <div className={styles.works}>
                 {
                     works.map((work) => 
-                        <Work key={work.id} image={work.img} title={work.title} />
+                        <Work key={work.id} image={work.img} title={work.title} typeIds={work.typeId} />
                     )
                 }
             </div>

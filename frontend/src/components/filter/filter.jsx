@@ -4,20 +4,29 @@ import Button from "../button/button";
 
 
 function Filter ({types, works, setFilteredWorks}) {
-    const [typeId, setTypeId] = React.useState(null);
+    const [typeIds, setTypeIds] = React.useState([]);
 
-    
+    const setTypeId = (categoryId) => {
+        if (typeIds.includes(categoryId)) {
+          setTypeIds(typeIds.filter((id) => id !== categoryId));
+        } else {
+          setTypeIds([...typeIds, categoryId]);
+        }
+      };
+      
     React.useEffect(() => {
-        const filtered = typeId === null ? works : works.filter((work) => work.typeId === typeId);
+        const filtered = typeIds.length === 0
+            ? works
+            : works.filter((work) => typeIds.some((categoryId) => work.typeId.includes(categoryId)));
         setFilteredWorks(filtered);
-    }, [typeId, works, setFilteredWorks]);
+    }, [typeIds, works, setFilteredWorks]);
 
     return(
         <div className={styles.filter}>
             {
                 types.map((type) => 
                     <Button 
-                    isActive={typeId === type.id} 
+                    isActive={typeIds.includes(type.id)} 
                     onClick={() => setTypeId(type.id)} 
                     key={type.id}
                     >
