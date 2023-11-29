@@ -4,9 +4,9 @@ import styles from "./footer.module.css";
 
 function Footer(){
     return(
-        <div className={styles.footer}>
+        <div className={`${styles.footer} mb-5`}>
             <img src={logo} alt="logo" />
-            <div className={styles.footerText}>НКПиИТ, 2023</div>
+            <div className="text-small">НКПиИТ, 2023</div>
         </div>
     )
 }

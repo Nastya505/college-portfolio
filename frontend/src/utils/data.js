@@ -73,6 +73,44 @@ const temp_data = {
             type: "Фотографии",
             icon: "https://i.ibb.co/QKBVQPn/Frame-35.png",
         },
+    ],
+    students:[
+        {
+            id: 1,
+            name: "Иванов Иван",
+            photo: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            group:"Графический дизайн",
+            course: "3 курс",
+            email: "ivanov454@gmail.com",
+            works:[1,2],
+        },
+        {
+            id: 2,
+            name: "Иванов Илья",
+            photo: "https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?q=80&w=1481&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            group:"Реклама",
+            course: "3 курс",
+            email: "ivanov32454@gmail.com",
+            works:[3,4],
+        },
+        {
+            id: 3,
+            name: "Иванова Виктория",
+            photo: "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            group:"Издательское дело",
+            course: "2 курс",
+            email: "vika4@gmail.com",
+            works:[5],
+        },
+        {
+            id: 4,
+            name: "Иванова Виолетта",
+            photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            group:"Графический дизайн",
+            course: "2 курс",
+            email: "ivanova11@gmail.com",
+            works:[7],
+        }
     ]
 }
 

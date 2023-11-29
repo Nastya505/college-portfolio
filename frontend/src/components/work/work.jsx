@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import temp_data from "../../utils/data";
 
 import styles from "./work.module.css";
 
-function Work({image, title, typeIds}){
+function Work({image, title, typeIds, id_work}){
     return(
         <div className={styles.work}>
             
@@ -18,7 +19,7 @@ function Work({image, title, typeIds}){
                     return null;
                 })}
            
-             <img className={styles.img} src={image} alt={title} />
+           <Link to={`/work/${id_work}`}><img className={styles.img} src={image} alt={title} /></Link>
         </div>
     )
 }

@@ -1,0 +1,34 @@
+.photo{
+    width: 108px;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1;
+}
+.workImg{
+    width: 100%;
+    position: absolute;
+    height: 102px;
+    top:0;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5)
+}
+.student{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(var(--offset-base-size) * 5);
+    box-sizing: border-box;
+    border: 1px solid var(--details-color);
+    height: 250px;
+    position: relative;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,8 +1,5 @@
 .button{
     color: var(--text-color);
-    font-family: var(--ff);
-    font-size: var(--fz-small);
-    font-weight: var(--fw-regular);
     line-height: 14px; 
     text-transform: lowercase;
     border-radius: 30px;
@@ -15,6 +12,11 @@
     justify-content: center;
     text-decoration: none;
     cursor: pointer;
+    
+}
+.button svg{
+    width: 16px;
+    height: 16px;
     
 }
 .button:hover, .active{

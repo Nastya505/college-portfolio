@@ -4,8 +4,9 @@
 :root{
   --offset-base-size: 4px;
 
-  --fz-small: 14px;
-  --fz-big: 80px;
+  --fs-small: 16px;
+  --fs-regular: 24px;
+  --fs-big: 80px;
 
   --fw-bold: 700;
   --fw-regular: 400;
@@ -23,3 +24,40 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap:20px;
+}
+.container{
+  width: min(100% - calc(var(--offset-base-size) * 5), 1400px);
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.icon-menu{
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.wrapper-1{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  gap:calc(var(--offset-base-size) * 20);
+  box-sizing: border-box;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  align-self: stretch;
+  margin: calc(var(--offset-base-size) * 5) 0;
+}
+

@@ -1,12 +1,6 @@
 .footer{
     display: flex;
-    margin: 0 20px;
-    padding: 20px 10px;
     align-items: center;
     gap: calc(var(--offset-base-size) * 1);
     box-sizing: border-box;
-    align-self: stretch;
-}
-.footerText{
-    font-size: var(--fz-small);
 }

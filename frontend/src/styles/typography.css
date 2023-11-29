@@ -1,2 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+* {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--fs-small);
+    font-weight: var(--fw-regular);
+  }
+  
+  .text-regular {
+    font-size: var(--fs-regular);
+  }
+  
+  .text-small {
+    font-size: var(--fs-small);
+  }
+  
+  .text-extra-big {
+    font-size: var(--fs-big);
+    font-weight: var(--fw-bold);
+    line-height: 70px;
+    text-transform: uppercase;
+    width: 45%;
+  }
+  
+  .bold {
+    font-weight: var(--fw-bold);
+  }
+
+  .text-decor{
+    text-decoration: none;
+  }
