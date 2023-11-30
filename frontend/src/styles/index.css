@@ -32,7 +32,8 @@ body {
   gap:20px;
 }
 .container{
-  width: min(100% - calc(var(--offset-base-size) * 5), 1400px);
+  width: 100%;
+  padding: 0 calc(var(--offset-base-size) * 5);
   margin: 0 auto;
   box-sizing: border-box;
   position: relative;
@@ -42,16 +43,9 @@ body {
   cursor: pointer;
   position: absolute;
   top: 5px;
-  right: 0;
+  right: calc(var(--offset-base-size) * 5);
 }
-.wrapper-1{
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
 
-  gap:calc(var(--offset-base-size) * 20);
-  box-sizing: border-box;
-}
 .pagination{
   display: flex;
   justify-content: center;

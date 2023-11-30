@@ -3,7 +3,6 @@ import { Input, Pagination } from '@mantine/core';
 import { CiSearch } from "react-icons/ci";
 
 
-import Works from '../../components/works/works';
 import temp_data from '../../utils/data';
 
 import styles from "./Studentspage.module.css";
@@ -15,7 +14,7 @@ function Studentspage(){
     return(
         <div>
             <div className={`${styles.header} mt-4 mb-8`}>
-                <div className={`${styles.title} text-extra-big` }>Cтуденты</div>
+                <div className={`${styles.title} text-extra-big`}>Cтуденты</div>
                 <div className={styles.wrapper}>
                 <Input classNames={{input:styles.input}} radius="lg" size='xs'  placeholder="поиск.." leftSection={<CiSearch/>} />
                 </div>

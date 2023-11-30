@@ -13,7 +13,6 @@ function Students({students}){
                         name={student.name} 
                         group={student.group} 
                         course={student.course} 
-                        email={student.email} 
                         photo={student.photo} 
                         works={student.works}
                         />

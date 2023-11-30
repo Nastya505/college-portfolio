@@ -1,0 +1,28 @@
+.wrapper{
+display: flex;
+justify-content: flex-end;
+flex-direction: column;
+gap:calc(var(--offset-base-size) * 20);
+box-sizing: border-box;
+}
+
+@media  screen and (max-width: 450px){
+.header{
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+@media  screen and (max-width: 610px){
+
+.title{
+    font-size: calc(var(--fs-big) / 1.4);
+    line-height: calc(var(--fs-big) / 1.4);
+}
+}
+@media  screen and (max-width: 380px){
+
+.title{
+    font-size: calc(var(--fs-big) / 1.9);
+    line-height: calc(var(--fs-big) / 1.9);
+}
+}

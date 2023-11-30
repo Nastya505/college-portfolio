@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styles from './student.module.css';
 import temp_data from '../../utils/data';
 
-function Student({id, name, group, course, email, photo, works}){
+function Student({id, name, group, course, photo, works}){
     const lastWorkId = works[works.length - 1];
     const lastWork = temp_data.work.find((work) => work.id === lastWorkId);
 
