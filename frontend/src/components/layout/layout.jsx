@@ -6,7 +6,7 @@ import icon from "../../images/icon-menu.svg"
 
 function Layout() {
     return (
-      <div className='container'>
+      <div className='container' style={{minHeight: "100vh"}}>
 
         <Menu withArrow className="icon-menu"  position="left-start">
           <Menu.Target>

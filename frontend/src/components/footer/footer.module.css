@@ -3,4 +3,5 @@
     align-items: center;
     gap: calc(var(--offset-base-size) * 1);
     box-sizing: border-box;
+    flex-shrink: 0;
 }

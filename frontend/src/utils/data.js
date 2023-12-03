@@ -3,6 +3,7 @@ const temp_data = {
     {
         id: 1,
         title: "Звездное Небо",
+        description: "Осталось придумать название рассказа. Оно должно отражать главную мысль и еще, при этом, быть интересным. К нашей теме отлично подошло бы название «Неземная красота»! Посмотрим, что у нас получилось Неземная красота",
         date: "14/05/2023",
         typeId: [1],
         img:"https://images.unsplash.com/photo-1699933486971-bcbc02b03ec1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -10,6 +11,7 @@ const temp_data = {
     {
         id: 2,
         title: "Подводный мир",
+        description: "Осталось придумать название рассказа. Оно должно отражать главную мысль и еще, при этом, быть интересным. К нашей теме отлично подошло бы название «Неземная красота»! Посмотрим, что у нас получилось Неземная красота",
         date: "05/05/2022",
         typeId: [2, 3],
         img:"https://images.unsplash.com/photo-1682686581413-0a0ec9bb35bb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -17,44 +19,50 @@ const temp_data = {
     {
         id: 3,
         title: "Горы",
+        description: "Осталось придумать название рассказа. Оно должно отражать главную мысль и еще, при этом, быть интересным. К нашей теме отлично подошло бы название «Неземная красота»! Посмотрим, что у нас получилось Неземная красота",
         date: "06/09/2023",
         typeId: [2],
         img:"https://images.unsplash.com/photo-1699893062191-6ac866d4bf60?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
         id: 4,
-        title: "Поле",
+        title: "Пустыня",
+        description: "Осталось придумать название рассказа. Оно должно отражать главную мысль и еще, при этом, быть интересным. К нашей теме отлично подошло бы название «Неземная красота»! Посмотрим, что у нас получилось Неземная красота",
         date: "07/03/2023",
         typeId:[3],
-        img:"https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",    
+        img:"https://images.unsplash.com/photo-1682686578842-00ba49b0a71a?q=80&w=1550&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",    
     },
     {
         id: 5,
         title: "Звездное Небо",
+        description: "Осталось придумать название рассказа. Оно должно отражать главную мысль и еще, при этом, быть интересным. К нашей теме отлично подошло бы название «Неземная красота»! Посмотрим, что у нас получилось Неземная красота",
         date: "14/05/2023",
         typeId: [1,3],
-        img:"https://images.unsplash.com/photo-1699933486971-bcbc02b03ec1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        img:"https://images.unsplash.com/photo-1682685797365-41f45b562c0a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
         id: 6,
         title: "Подводный мир",
+        description: "Осталось придумать название рассказа. Оно должно отражать главную мысль и еще, при этом, быть интересным. К нашей теме отлично подошло бы название «Неземная красота»! Посмотрим, что у нас получилось Неземная красота",
         date: "05/05/2022",
         typeId: [2],
-        img:"https://images.unsplash.com/photo-1682686581413-0a0ec9bb35bb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        img:"https://images.unsplash.com/photo-1701505708176-63194ee8f0e8?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
         id: 7,
         title: "Горы",
         date: "06/09/2023",
+        description: "Осталось придумать название рассказа. Оно должно отражать главную мысль и еще, при этом, быть интересным. К нашей теме отлично подошло бы название «Неземная красота»! Посмотрим, что у нас получилось Неземная красота",
         typeId:[2],
-        img:"https://images.unsplash.com/photo-1699893062191-6ac866d4bf60?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        img:"https://images.unsplash.com/photo-1682686580452-37f1892ee5e8?q=80&w=1550&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
         id: 8,
-        title: "Поле",
+        title: "Пустыня",
+        description: "Осталось придумать название рассказа. Оно должно отражать главную мысль и еще, при этом, быть интересным. К нашей теме отлично подошло бы название «Неземная красота»! Посмотрим, что у нас получилось Неземная красота",
         date: "07/03/2023",
         typeId: [3],
-        img:"https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",    
+        img:"https://images.unsplash.com/photo-1682687220509-61b8a906ca19?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",    
     }
     ],
     typeOfWork:[
@@ -100,7 +108,7 @@ const temp_data = {
             group:"Издательское дело",
             course: "2 курс",
             email: "vika4@gmail.com",
-            works:[5],
+            works:[5,6],
         },
         {
             id: 4,
@@ -109,8 +117,9 @@ const temp_data = {
             group:"Графический дизайн",
             course: "2 курс",
             email: "ivanova11@gmail.com",
-            works:[7],
-        }
+            works:[7,8],
+        },
+      
     ]
 }
 

@@ -38,7 +38,7 @@ function Homepage() {
 
         <Works works={filteredWorks}/>
 
-        <Pagination className="pagination"  value={activePage} onChange={setPage} total={10} color="rgba(0, 0, 0, 1)" radius="lg" withControls={false} />
+        <Pagination className="pagination mb-14"  value={activePage} onChange={setPage} total={10} color="rgba(0, 0, 0, 1)" radius="lg" withControls={false} />
 
    </>
   );

@@ -13,7 +13,7 @@ function Student({id, name, group, course, photo, works}){
                 <img className={styles.photo} src={photo} alt="photo" />
                 <div className={`${styles.info} mb-5`}>
                     <div className="bold text-regular">{name}</div>
-                    <div>{group}, {course}</div>
+                    <div className='text-small'>{group}, {course}</div>
                 </div>
             </div>
         </Link>

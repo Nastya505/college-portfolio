@@ -26,11 +26,29 @@
 .mt-4{
     margin-top: calc(var(--offset-base-size) * 4);
 }
+.mt-5{
+    margin-top: calc(var(--offset-base-size) * 5);
+}
+.mt-10{
+    margin-top: calc(var(--offset-base-size) * 10);
+}
+.mt-15{
+    margin-top: calc(var(--offset-base-size) * 15);
+}
 .mb-5{
     margin-bottom: calc(var(--offset-base-size) * 5);
 }
 .mb-6{
     margin-bottom: calc(var(--offset-base-size) * 6);
+}
+.mb-10{
+    margin-bottom: calc(var(--offset-base-size) * 10);
+}
+.mb-14{
+    margin-bottom: calc(var(--offset-base-size) * 14);
+}
+.mb-15{
+    margin-bottom: calc(var(--offset-base-size) * 15);
 }
 .mb-8{
     margin-bottom: calc(var(--offset-base-size) * 8);

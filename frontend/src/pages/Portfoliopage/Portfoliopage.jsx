@@ -6,11 +6,8 @@ function Portfoliopage(){
     return(
           <>
             <div className={`${styles.header} mt-4 mb-5`}>
-                <div className={`${styles.title} text-extra-big` }>Работы студентов</div>
-                <div className={styles.wrapper}>
-
+                <div className={`${styles.title} text-extra-big` }>Портфолио студента</div>
                     <Portfolio/>
-                </div>
             </div>
           </>
         

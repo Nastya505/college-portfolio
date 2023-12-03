@@ -29,3 +29,12 @@
   .text-decor{
     text-decoration: none;
   }
+
+  @media (max-width: 650px) {
+    .text-regular{
+     font-size: var(--fs-small);
+    }
+    .text-small{
+     font-size: calc(var(--fs-small) / 1.4);
+    }
+  }
