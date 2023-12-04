@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import styles from './student.module.css';
 import temp_data from '../../utils/data';
 
+// Данный компонент отображает информацию о студенте в виде карточки
+
 function Student({id, name, group, course, photo, works}){
     const lastWorkId = works[works.length - 1];
     const lastWork = temp_data.work.find((work) => work.id === lastWorkId);

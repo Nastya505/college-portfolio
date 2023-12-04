@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./filter.module.css";
 import Button from "../button/button";
 
-
+// Данный компонент фильтрует работы по категориям
 function Filter ({types, works, setFilteredWorks}) {
     const [typeIds, setTypeIds] = React.useState([]);
 

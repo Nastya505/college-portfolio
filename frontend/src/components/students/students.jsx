@@ -1,10 +1,13 @@
+import { motion } from "framer-motion";
+
 import Student from '../student/student';
 import styles from './students.module.css';
 
+// Данный компонент отображает список всех студентов
 function Students({students}){
     return(
         <div className={styles.container}>
-            <div className={styles.students}>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .25 }}className={styles.students}>
                 {
                     students.map((student) => 
                         <Student 
@@ -18,7 +21,7 @@ function Students({students}){
                         />
                     )
                 }
-            </div>
+            </motion.div>
         </div>
     )
 }

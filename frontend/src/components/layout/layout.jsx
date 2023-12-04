@@ -1,8 +1,12 @@
 import { Menu} from '@mantine/core';
+
 import {Link, Outlet} from "react-router-dom";
+
 import Footer from '../footer/footer';
 
 import icon from "../../images/icon-menu.svg"
+
+// Данный компонент отображается на всех страницах. В него входит меню с навигацией и подвал сайта
 
 function Layout() {
     return (

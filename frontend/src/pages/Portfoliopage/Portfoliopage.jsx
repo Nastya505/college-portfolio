@@ -1,6 +1,7 @@
 import Portfolio from "../../components/portfolio/portfolio";
 import styles from "./Portfoliopage.module.css";
 
+// Данный компонент отображает портфолио студента
 function Portfoliopage(){
 
     return(

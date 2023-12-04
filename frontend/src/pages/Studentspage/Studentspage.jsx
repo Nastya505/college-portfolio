@@ -2,12 +2,12 @@ import React from 'react';
 import { Input, Pagination } from '@mantine/core';
 import { CiSearch } from "react-icons/ci";
 
-
 import temp_data from '../../utils/data';
-
-import styles from "./Studentspage.module.css";
 import Students from '../../components/students/students';
 
+import styles from "./Studentspage.module.css";
+
+// Данный компонент отображает страницу со списком студентов
 
 function Studentspage(){
     const [activePage, setPage] = React.useState(1);

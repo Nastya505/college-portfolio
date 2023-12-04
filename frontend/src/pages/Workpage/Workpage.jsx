@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import temp_data from "../../utils/data";
 import styles from "./Workpage.module.css";
 
+// Данный компонент отображает страницу с информацией о работе
+
 function Workpage(){
     // const { id } = useParams();
     // const [work, setWork] = useState(null);

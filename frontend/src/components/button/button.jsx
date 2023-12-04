@@ -1,5 +1,6 @@
 import styles from "./button.module.css"
 
+// Данный компонент отображает кнопку
 function Button({onClick, isActive, children}){
     return(
         <>
