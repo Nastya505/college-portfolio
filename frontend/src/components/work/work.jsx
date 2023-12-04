@@ -8,12 +8,9 @@ import styles from "./work.module.css";
 
 
 const animations = {
-    initial: { y: "100%", opacity: 0, scale: 2 },
+    initial: { y: "200%", opacity: 0, scale: 1.3 },
     animate: { y: 0,opacity: 1, scale: 1 },
-    // transition : {type:"keyframes", duration: 1},
-    transition: { type: "spring", stiffness: 100 },
-    // transition: {type: "tween", duration: 1, ease: "easeInOut" },
-
+    transition: { type: "spring", stiffness: 100, damping: 20 },
     exit: { opacity: 0 },
 }
 
