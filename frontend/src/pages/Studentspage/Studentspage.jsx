@@ -10,19 +10,35 @@ import styles from "./Studentspage.module.css";
 // Данный компонент отображает страницу со списком студентов
 
 function Studentspage(){
+    
     const [activePage, setPage] = React.useState(1);
+
     return(
         <div>
             <div className={`${styles.header} mt-4 mb-8`}>
                 <div className={`${styles.title} text-extra-big`}>Cтуденты</div>
                 <div className={styles.wrapper}>
-                <Input classNames={{input:styles.input}} radius="lg" size='xs'  placeholder="поиск.." leftSection={<CiSearch/>} />
+                <Input 
+                classNames={{input:styles.input}} 
+                radius="lg" 
+                size='xs'  
+                placeholder="поиск.." 
+                leftSection={<CiSearch/>} 
+                />
                 </div>
             </div>
 
           <Students students={temp_data.students} />
 
-          <Pagination className="pagination"  value={activePage} onChange={setPage} total={10} color="rgba(0, 0, 0, 1)" radius="lg" withControls={false}  />
+          <Pagination 
+          className="pagination"  
+          value={activePage} 
+          onChange={setPage} 
+          total={10} 
+          color="rgba(0, 0, 0, 1)" 
+          radius="lg" 
+          withControls={false}  
+          />
         </div>
     )
 }

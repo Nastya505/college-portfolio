@@ -87,8 +87,8 @@ function Workpage(){
 
                 <img className={styles.img} src={work.img} alt={work.title} /> 
                 <div className={`${styles.description} text-regular  mb-10`}>{work.description}</div>
-            </div> */}
-         
+            </div>
+          */}
           </>
         
     )

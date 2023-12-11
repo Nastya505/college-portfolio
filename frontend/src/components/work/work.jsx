@@ -1,24 +1,17 @@
 import { Link } from "react-router-dom";
 import temp_data from "../../utils/data";
 
-import { motion } from "framer-motion";
-
-
 import styles from "./work.module.css";
 
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
-const animations = {
-    initial: { y: "200%", opacity: 0, scale: 1.3 },
-    animate: { y: 0,opacity: 1, scale: 1 },
-    transition: { type: "spring", stiffness: 100, damping: 20 },
-    exit: { opacity: 0 },
-}
 
 // Данный компонент отображает информацию о работе с указанием ее категории
 
 function Work({image, title, typeIds, id_work}){
     return(
-        <motion.div className={styles.work} {...animations}>
+        <div className={styles.work} >
             
                 {typeIds.map((typeId) => {
                     const category = temp_data.typeOfWork.find((type) => type.id === typeId);
@@ -33,7 +26,7 @@ function Work({image, title, typeIds, id_work}){
                 })}
            
            <Link to={`/work/${id_work}`}><img className={styles.img} src={image} alt={title} /></Link>
-        </motion.div>
+        </div>
     )
 }
 

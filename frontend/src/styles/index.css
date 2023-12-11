@@ -36,8 +36,9 @@ body {
 .icon-menu{
   cursor: pointer;
   position: absolute;
-  top: 5px;
+  margin-top: 5px;
   right: calc(var(--offset-base-size) * 5);
+  position: fixed;
 }
 
 .pagination{

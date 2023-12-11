@@ -15,30 +15,44 @@ import styles from "./Homepage.module.css";
 
 // Данный компонент отображает главную страницу
 function Homepage() {
+
   // отфильтрованные работы; функция фильтрации
   const [filteredWorks, setFilteredWorks] = React.useState(temp_data.work);
+
   // активная страница; функция пагинации
   const [activePage, setPage] = React.useState(1);
+
   // открыто ли модальное окно; функция открытия и закрытия
   const [opened, { open, close }] = useDisclosure(false);
  
   return (
    <>
         <div className={`${styles.header} mt-4 mb-5`}>
-          <div className={`${styles.title} text-extra-big` }>Работы студентов</div>
+          <div className={`${styles.title} text-extra-big`}>Работы студентов </div>
           <div className={styles.wrapper}>
 
             <Modal opened={opened} onClose={close} title="Выберите типы работ" centered>
-                <Filter types={temp_data.typeOfWork} works={temp_data.work} setFilteredWorks={setFilteredWorks}/>
+                <Filter 
+                types={temp_data.typeOfWork} 
+                works={temp_data.work} 
+                setFilteredWorks={setFilteredWorks}/>
             </Modal>
+
             <Button onClick={open} ><LuFilter /></Button>
             
           </div>
         </div>
 
-        <Works works={filteredWorks}/>
+       <Works works={filteredWorks}/> 
 
-        <Pagination className="pagination mb-14"  value={activePage} onChange={setPage} total={10} color="rgba(0, 0, 0, 1)" radius="lg" withControls={false} />
+        <Pagination className="pagination mb-14"
+          value={activePage}
+          onChange={setPage}
+          total={10} 
+          color="rgba(0, 0, 0, 1)" 
+          radius="lg" 
+          withControls={false} 
+        />
    </>
   );
 }

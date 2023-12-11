@@ -1,6 +1,4 @@
-import { useParams, Link } from "react-router-dom";
-
-import { motion } from "framer-motion";
+import { useParams} from "react-router-dom";
 
 import Work from "../work/work";
 import temp_data from "../../utils/data";
@@ -14,13 +12,8 @@ function Portfolio(){
   
     const { id } = useParams();
     const student = temp_data.students.find((student) => student.id === Number(id));
-    
-    if (!student) {
-      return <p>Студент не найден</p>;
-    }
   
     return(
-        //  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .25 }}>
           <>
             <div className={`${styles.student} mt-15`}>
               <img className={styles.photo} src={student.photo} alt={student.name} />
@@ -39,7 +32,7 @@ function Portfolio(){
                 </div>
             </div>
           </>
-          // </motion.div>
+    
         
     )
 }
