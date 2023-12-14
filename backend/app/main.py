@@ -1,8 +1,9 @@
 from fastapi import FastAPI
 
-from sqlalchemy.orm import Session
-from config.db import engine, get_db
-from . import models
+
+from .config.db import engine
+from .config.db import Base
+from .routers import works, authors, types, works_types
 
 app = FastAPI(
     title="College Portfolio API",
@@ -10,4 +11,9 @@ app = FastAPI(
     redoc_url=None
 )
 
-models.Base
+Base.metadata.create_all(bind=engine)
+
+app.include_router(works.router)
+app.include_router(authors.router)
+app.include_router(types.router)
+app.include_router(works_types.router)

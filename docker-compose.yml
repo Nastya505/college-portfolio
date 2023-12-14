@@ -5,28 +5,16 @@ services:
     image: postgres:latest
     restart: always
     container_name: postgres_container
-    command: -p 5432
-    expose:
-      - 5432
     volumes:
       - ./docker/pg-data:/var/lib/postgresql/data/
     env_file:
       - .env 
+    network_mode: "host"
   
-  # adminer:
-  #   image: adminer
-  #   restart: always
-  #   ports:
-  #     - 8080:8080
-  #   depends_on:
-  #     - postgres_db
-
   pg_admin:
     image: dpage/pgadmin4:latest
     restart: always
     container_name: pgadmin_container
-    ports:
-      - 5050:80
     user: "${UID}:${GID}"
     volumes:
       - ./docker/pgadmin-data:/var/lib/pgadmin
@@ -34,6 +22,7 @@ services:
       - .env
     depends_on:
       - postgres_db
+    network_mode: "host"
 
 volumes:
   pg_data:
