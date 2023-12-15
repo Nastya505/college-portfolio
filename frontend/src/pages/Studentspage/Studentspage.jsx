@@ -28,7 +28,7 @@ function Studentspage(){
                 </div>
             </div>
 
-          <Students students={temp_data.students} />
+          <Students />
 
           <Pagination 
           className="pagination"  

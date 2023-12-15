@@ -4,9 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+fastapi = {extras = ["all"], version = "*"}
 sqlalchemy = "*"
 psycopg2-binary = "*"
-fastapi = {extras = ["all"], version = "*"}
 
 [dev-packages]
 

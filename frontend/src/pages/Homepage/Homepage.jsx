@@ -43,7 +43,7 @@ function Homepage() {
           </div>
         </div>
 
-       <Works works={filteredWorks}/> 
+       <Works /> 
 
         <Pagination className="pagination mb-14"
           value={activePage}

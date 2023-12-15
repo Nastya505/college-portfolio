@@ -7,6 +7,7 @@ services:
     container_name: postgres_container
     volumes:
       - ./docker/pg-data:/var/lib/postgresql/data/
+    command: -p 5435
     env_file:
       - .env 
     network_mode: "host"
