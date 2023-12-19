@@ -47,7 +47,6 @@ function Workpage(){
   
     return(
           <>
-            <Suspense fallback={<div>Loading...</div>}>
             <div className={`${styles.header} mt-4 mb-8`}>
                 <div className={`${styles.title} text-extra-big`}>{work.title}</div>
             </div>
@@ -65,7 +64,6 @@ function Workpage(){
                 <img className={styles.img} src={work.image} alt={work.title} /> 
                 <div className={`${styles.description} text-regular  mb-10`}>{work.description}</div>
             </div>
-            </Suspense>
           </>
         
     )
