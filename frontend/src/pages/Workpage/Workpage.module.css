@@ -1,4 +1,5 @@
 .photo {
+<<<<<<< HEAD
     width: 100%;
     max-width: 108px;
     display: block;
@@ -53,3 +54,59 @@
       max-width: 80px;
     }
   }
+=======
+  width: 100%;
+  max-width: 108px;
+  display: block;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 1;
+}
+.student {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--offset-base-size) * 1);
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--offset-base-size) * 10);
+  width: min(100%, 1000px);
+  margin: 0 auto;
+}
+
+.description {
+  width: 100%;
+  max-width: 650px;
+  text-align: left;
+  line-height: 25px;
+}
+
+
+@media (max-width: 650px) {
+  .title{
+    font-size: calc(var(--fs-big) / 2.4);
+    line-height: calc(var(--fs-big) / 2.4);
+  }
+  .photo{
+    max-width: 80px;
+  }
+}
+>>>>>>> refs/remotes/origin/main
