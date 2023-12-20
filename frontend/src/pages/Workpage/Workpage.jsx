@@ -1,7 +1,8 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import axios from "axios";
 
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./Workpage.module.css";
 
 // Данный компонент отображает страницу с информацией о работе
@@ -21,8 +22,6 @@ function Workpage(){
             const response = await axios.get(`${API_Work}/${id}`);
             setWork(response.data);
             const studentId = response.data.author;
-
-    
             try{
                 const response = await axios.get(`${API_Student}/${studentId}`);
                 setStudent(response.data);
@@ -31,8 +30,6 @@ function Workpage(){
             catch(error){
                 console.log(error);
             }
-    
-
         }catch(error){
             console.log(error);
         }
@@ -52,15 +49,15 @@ function Workpage(){
             </div>
 
             <div className={`${styles.container} mt-15 mb-15`}>
-        
-                <div className={styles.student} key={student.id}>
-                    <img className={styles.photo} src={student.photo} alt={student.name} />
-                    <div className="bold text-regular">{student.name} {student.surname}</div>
-                    <div className={styles.info}>
-                        <div>{student.group}-{student.class_group}-{student.year_group}</div>
+                <Link style={{ textDecoration: 'none',color: 'black' }} to={`/portfolio/${student.id}`}>
+                    <div className={styles.student} key={student.id}>
+                        <img className={styles.photo} src={student.photo} alt={student.name} />
+                        <div className="bold text-regular">{student.name} {student.surname}</div>
+                        <div className={styles.info}>
+                            <div>{student.group}-{student.class_group}-{student.year_group}</div>
+                        </div>
                     </div>
-                </div>
-      
+                </Link>
                 <img className={styles.img} src={work.image} alt={work.title} /> 
                 <div className={`${styles.description} text-regular  mb-10`}>{work.description}</div>
             </div>

@@ -1,3 +1,5 @@
+import React from "react";
+import { useLocation } from "react-router-dom";
 import {Routes, Route} from "react-router-dom";
 import { Scrollbars } from 'rc-scrollbars';
 
@@ -8,6 +10,15 @@ import Workpage from "../../pages/Workpage/Workpage";
 import Layout from "../layout/layout";
 
 function App() {
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    const scrollbarsElement = document.querySelector(".rc-scrollbars-view");
+    if (scrollbarsElement) {
+      scrollbarsElement.scrollTop = 0;
+    }
+  }, [pathname]);
+  
   return (
     <>
      <Scrollbars style={{ height: "100vh" }}>

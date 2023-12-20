@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 
+import Work from "../work/work";
+
 import styles from "./portfolio.module.css";
 
 
@@ -12,7 +14,7 @@ import styles from "./portfolio.module.css";
 function Portfolio(){
 
   const API_Student = "http://localhost:8000/api/authors/id";
-  const API_Works = "http://localhost:8000/api/works";
+  const API_Works = "http://127.0.0.1:8000/api/works/actual";
 
   const { id } = useParams();
 
@@ -27,10 +29,10 @@ function Portfolio(){
   
           try{
               const response = await axios.get(API_Works);
-            
-              setWorks(response.data[0]);
-              console.log(response.data[0]);
-           
+              setWorks(response.data);
+              console.log(response.data);
+      
+          
           }
           catch(error){
               console.log(error);
@@ -50,6 +52,7 @@ function Portfolio(){
 
     return(
           <>
+
             <div className={`${styles.student} mt-15`}>
               <img className={styles.photo} src={student.photo} />
               <div className="bold text-regular">{student.name} {student.surname}</div>
@@ -57,15 +60,25 @@ function Portfolio(){
                 <div>{student.group}-{student.class_group}-{student.year_group}</div>
                 <div>{student.email}</div>
               </div>
+
             </div>
             <div className={`${styles.container} mt-15 mb-14`}>
                 <div className={styles.works}>
+                
                     {works.map((work) => {
-                          return  (
-                            <Link to={`/work/${work.id}`}> 
-                                <img className={styles.img} src={work.image} />
-                            </Link>
-                          )
+                      if( work.author === student.id){
+                        return  (
+
+                            <Work 
+                            key={work.work_id} 
+                            id_work={work.work_id} 
+                            image={work.image} 
+                            typeIds={work.type_id}  
+                            typeIcons={work.icon}  
+                            />
+
+                        )
+                      }
                     })}
                 </div>
             </div>

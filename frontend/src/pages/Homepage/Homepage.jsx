@@ -24,9 +24,10 @@ function Homepage() {
   // активная страница; функция пагинации
   const [activePage, setPage] = React.useState(1);
   const [countrPages, setcountrPages] = React.useState(null);
-
+//колличество работ в одной странице
   const WorksInPage = 6;
-  const [data, setData] = React.useState([]);
+
+  const [works, setWorks] = React.useState([]);
 
   // открыто ли модальное окно; функция открытия и закрытия
   const [opened, { open, close }] = useDisclosure(false);
@@ -42,15 +43,13 @@ function Homepage() {
   }
   
 
-const fetchData = async () => {
+const getWorksInPage = async () => {
   try {
-    if(activePage <= Math.ceil(countrPages / WorksInPage)){
-    const response = await axios.put(`${API}/${activePage-1}&${WorksInPage}`, [1,2,3]);
-    setData(response.data);
+  
+    const response = await axios.put(`${API}/${activePage}&${WorksInPage}`, [1,2,3]);
+    setWorks(response.data);
     console.log(response.data); 
-    } else{
-      setData([]);
-    }
+   
   } catch (error) {
     console.error(error);
   }
@@ -62,7 +61,7 @@ const handlePageChenge = (newPage) => {
 };
   React.useEffect(() => {
     getAllWorks();
-    fetchData();
+    getWorksInPage();
   }, [activePage]);
   
   return (
@@ -86,7 +85,7 @@ const handlePageChenge = (newPage) => {
     
         <div className={styles.container}>
         <div className={styles.works}>
-          {data.map((work) => (
+          {works.map((work) => (
             <Work
               key={work.work_id}
               id_work={work.work_id}

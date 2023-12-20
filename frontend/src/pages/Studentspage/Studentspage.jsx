@@ -62,7 +62,7 @@ function Studentspage(){
             </div>
             </div>
 
-          <Pagination 
+          {/* <Pagination 
           className="pagination"  
           value={activePage} 
           onChange={setPage} 
@@ -70,7 +70,7 @@ function Studentspage(){
           color="rgba(0, 0, 0, 1)" 
           radius="lg" 
           withControls={false}  
-          />
+          /> */}
         </div>
     )
 }

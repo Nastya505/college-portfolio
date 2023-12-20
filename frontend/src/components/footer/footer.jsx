@@ -5,7 +5,7 @@ import styles from "./footer.module.css";
 
 function Footer(){
     return(
-        <div className={`${styles.footer} mb-5`}>
+        <div className={`${styles.footer} mt-10 mb-5`}>
             <img src={logo} alt="logo" />
             <div className="text-small">НКПиИТ, 2023</div>
         </div>
