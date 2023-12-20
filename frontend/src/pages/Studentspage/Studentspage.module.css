@@ -19,7 +19,24 @@
   .input:focus {
     border-color: var(--text-color);
   }
-
+  .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+ }
+ .students{
+    display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-column-start: 2;
+     grid-column-end: 4;
+     gap:calc(var(--offset-base-size) * 5);
+ }
+ 
+ @media (max-width: 850px) {
+   .students{
+     grid-template-columns: 1fr;
+   }
+ }
   @media  screen and (max-width: 865px){
     .header{
         flex-direction: column;
